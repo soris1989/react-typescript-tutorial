@@ -2,6 +2,7 @@ import { ChangeEvent } from "react";
 
 interface Props {
   editingName: string;
+  disabled: boolean;
   onNameChange: (value: string) => void;
   onNameUpdated: () => void;
 }
@@ -25,7 +26,9 @@ function NameEdit(props: Props) {
         value={props.editingName}
         onChange={onChange}
       />
-      <button onClick={onSubmit}>Submit</button>
+      <button disabled={props.disabled} onClick={onSubmit}>
+        Submit
+      </button>
     </>
   );
 }
