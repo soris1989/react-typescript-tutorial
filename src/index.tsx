@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import "./index.scss";
-import App from "./11_TableAxios/App";
+import App from "./12_ReactRouter";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
